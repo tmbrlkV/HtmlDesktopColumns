@@ -1,6 +1,6 @@
 package com.columns.logic;
 
-import com.columns.controller.ControlEvents;
+import com.columns.controller.MovementChanger;
 
 public class GameConfiguration {
     private static final int MAX_LEVEL = 7;
@@ -31,7 +31,7 @@ public class GameConfiguration {
         if (level < MAX_LEVEL) {
             level++;
             speed -= SPEED_DELTA;
-            ControlEvents.SpeedChanger.setSpeed(speed);
+            MovementChanger.setSpeed(speed);
         }
     }
 
@@ -39,7 +39,7 @@ public class GameConfiguration {
         if (level > 0) {
             level--;
             speed += SPEED_DELTA;
-            ControlEvents.SpeedChanger.setSpeed(speed);
+            MovementChanger.setSpeed(speed);
         }
     }
 

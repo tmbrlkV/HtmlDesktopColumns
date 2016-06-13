@@ -34,20 +34,20 @@ class ColumnsScreen implements Screen {
     }
 
     private void drawStatistics() {
-        info.append("Score: ").append(GameConfiguration.getScore()).append("\n")
-                .append("Level: ").append(GameConfiguration.getLevel());
-        font.draw(batch, info, 220, 350);
+        info.append("Level: ").append(GameConfiguration.getLevel()).append(" ")
+                .append("Score: ").append(GameConfiguration.getScore());
+        font.draw(batch, info, 10, 30);
         info.setLength(0);
     }
 
     private void drawHelp() {
-        info.append("Move: Left/Right\n")
-                .append("Roll: Up/Down \n")
-                .append("Drop: Space \n")
-                .append("Pause: P \n")
-                .append("Level: +/- \n");
-        font.draw(batch, info, 220, 470);
-        info.setLength(0);
+//        info.append("Move: Left/Right\n")
+//                .append("Roll: Up/Down \n")
+//                .append("Drop: Space \n")
+//                .append("Pause: P \n")
+//                .append("Level: +/- \n");
+//        font.draw(batch, info, 220, 470);
+//        info.setLength(0);
     }
 
     @Override

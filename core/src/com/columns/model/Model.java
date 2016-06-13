@@ -10,7 +10,7 @@ public class Model {
     public static final int ROWS = 15;
     public static final int COLUMNS = 7;
     private Logic logic;
-    private List<ModelListener> listeners = new LinkedList<>();
+    private List<ModelListener> listeners = new LinkedList<ModelListener>();
     private boolean isGameOver;
 
     public Model() {

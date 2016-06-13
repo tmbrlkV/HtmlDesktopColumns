@@ -5,10 +5,10 @@ import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 import com.columns.game.Columns;
 
 public class DesktopLauncher {
-	public static void main (String[] arg) {
-		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-		config.height = 480;
-        config.width = 350;
-		new LwjglApplication(new Columns(), config);
-	}
+    public static void main(String[] arg) {
+        LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
+        config.height = 480;
+        config.width = 210;
+        new LwjglApplication(new Columns(), config);
+    }
 }
